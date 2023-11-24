@@ -8,6 +8,11 @@ export const appRoutes: Route[] = [
       import('same-version/Routes').then((m) => m.remoteRoutes),
   },
   {
+    path: 'other-version',
+    loadChildren: () =>
+      import('other-version/Routes').then((m) => m.remoteRoutes),
+  },
+  {
     path: '',
     component: NxWelcomeComponent,
   },
