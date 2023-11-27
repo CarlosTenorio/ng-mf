@@ -8,8 +8,4 @@ import { RouterModule } from '@angular/router';
   selector: 'ng-mf-same-version-entry',
   template: `<h1>REMOTE SAME VERSION</h1>`,
 })
-export class RemoteEntryComponent {
-  constructor() {
-    console.log('RemoteEntryComponent created');
-  }
-}
+export class RemoteEntryComponent {}

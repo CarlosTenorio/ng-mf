@@ -1,0 +1,13 @@
+{
+  "same-version": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "exposedModule": "./Routes",
+    "displayName": "Same version routes"
+  },
+  "other-version": {
+    "remoteEntry": "http://localhost:4202/remoteEntry.js",
+    "exposedModule": "./Module",
+    "displayName": "Other version module",
+    "ngModuleName": "AppModule"
+  }
+}

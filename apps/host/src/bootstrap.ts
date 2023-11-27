@@ -1,7 +1,7 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { bootstrap } from '@angular-architects/module-federation-tools';
+import { AppModule } from './app/app.module';
 
-bootstrapApplication(AppComponent, appConfig).catch((err) =>
-  console.error(err)
-);
+bootstrap(AppModule, {
+  production: false,
+  appType: 'shell',
+});
