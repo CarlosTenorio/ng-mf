@@ -12,8 +12,6 @@
   },
   "other-version": {
     "remoteEntry": "http://localhost:4202/remoteEntry.js",
-    "exposedModule": "./Module",
-    "displayName": "Other version module",
-    "ngModuleName": "AppModule"
+    "displayName": "Other version module manifest"
   }
 }

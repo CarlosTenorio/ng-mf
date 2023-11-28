@@ -37,7 +37,6 @@ export const appRoutes: Route[] = [
     path: 'other-version',
     component: WebComponentWrapper,
     data: {
-      remoteEntry: 'http://localhost:4202/remoteEntry.js',
       remoteName: 'other-version',
       exposedModule: './web-components',
       elementName: 'other-version-element',
