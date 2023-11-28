@@ -6,6 +6,7 @@ import {
 export default withModuleFederationPlugin({
   name: 'same-version',
   exposes: {
+    './AdminModule': 'apps/same-version/src/app/modules/admin/admin.module.ts',
     './Routes': 'apps/same-version/src/app/remote-entry/entry.routes.ts',
   },
   shared: {

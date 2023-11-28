@@ -4,6 +4,12 @@
     "exposedModule": "./Routes",
     "displayName": "Same version routes"
   },
+  "same-version-admin-module": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "exposedModule": "./AdminModule",
+    "displayName": "Same version admin module",
+    "ngModuleName": "AdminModule"
+  },
   "other-version": {
     "remoteEntry": "http://localhost:4202/remoteEntry.js",
     "exposedModule": "./Module",

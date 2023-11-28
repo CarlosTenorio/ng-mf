@@ -7,7 +7,8 @@
   },
   "files": [
     "src/main.ts",
-    "src/app/remote-entry/entry.routes.ts"
+    "src/app/remote-entry/entry.routes.ts",
+    "src/app/modules/admin/admin.module.ts"
   ],
   "include": [
     "src/**/*.d.ts"

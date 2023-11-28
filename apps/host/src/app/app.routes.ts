@@ -16,15 +16,15 @@ export const appRoutes: Route[] = [
         exposedModule: './Routes',
       }).then((m) => m.remoteRoutes),
   },
-  // {
-  //   path: 'other-version',
-  //   loadChildren: () =>
-  //     loadRemoteModule({
-  //       type: 'manifest',
-  //       remoteName: 'other-version',
-  //       exposedModule: './Module',
-  //     }).then((m) => m.AppModule),
-  // },
+  {
+    path: 'same-version-admin-module',
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'manifest',
+        remoteName: 'same-version-admin-module',
+        exposedModule: './AdminModule',
+      }).then((m) => m.AdminModule),
+  },
   {
     path: 'other-version',
     component: WebComponentWrapper,
