@@ -4,9 +4,17 @@ import {
   WebComponentWrapperOptions,
 } from '@angular-architects/module-federation-tools';
 import { Route } from '@angular/router';
+import { loadRemoteModule as loadRemoteModuleNX } from '@nx/angular/mf';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
 export const appRoutes: Route[] = [
+  {
+    path: 'same-version-admin-module-nx',
+    loadChildren: () =>
+      loadRemoteModuleNX('same-version-admin-module', './Module').then(
+        (m) => m.AdminModule
+      ),
+  },
   {
     path: 'same-version',
     loadChildren: () =>
