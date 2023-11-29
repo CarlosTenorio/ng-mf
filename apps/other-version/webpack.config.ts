@@ -10,26 +10,27 @@ export default withModuleFederationPlugin({
     // './Module': './apps/other-version/src/app/app.module.ts',
     './web-components': './apps/other-version/src/bootstrap.ts',
   },
-  shared: share({
-    '@angular/core': {
-      singleton: true,
-      strictVersion: false,
-      requiredVersion: 'auto',
-    },
-    '@angular/common': {
-      singleton: true,
-      strictVersion: false,
-      requiredVersion: 'auto',
-    },
-    '@angular/common/http': {
-      singleton: true,
-      strictVersion: false,
-      requiredVersion: 'auto',
-    },
-    '@angular/router': {
-      singleton: true,
-      strictVersion: false,
-      requiredVersion: 'auto',
-    },
-  }),
+  shared: {},
+  // shared: share({
+  //   '@angular/core': {
+  //     singleton: true,
+  //     strictVersion: false,
+  //     requiredVersion: 'auto',
+  //   },
+  //   '@angular/common': {
+  //     singleton: true,
+  //     strictVersion: false,
+  //     requiredVersion: 'auto',
+  //   },
+  //   '@angular/common/http': {
+  //     singleton: true,
+  //     strictVersion: false,
+  //     requiredVersion: 'auto',
+  //   },
+  //   '@angular/router': {
+  //     singleton: true,
+  //     strictVersion: false,
+  //     requiredVersion: 'auto',
+  //   },
+  // }),
 });

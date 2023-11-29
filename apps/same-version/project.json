@@ -41,6 +41,7 @@
             }
           ],
           "outputHashing": "all",
+          "namedChunks": true,
           "customWebpackConfig": {
             "path": "apps/same-version/webpack.prod.config.ts"
           }
